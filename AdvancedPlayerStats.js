@@ -1,5 +1,5 @@
 /**
-* BF4 Advanced Player Links - Add some advanced player links (Anti-Cheat) to the profile.
+* BF4 Advanced Player stats - Add some advanced player links (Anti-Cheat) to the profile.
 *
 * @author I-MrFixIt-I + Elementofprgress (ACI)
 * @version 1.1.1
