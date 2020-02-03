@@ -8,10 +8,10 @@ FireFox: https://addons.mozilla.org/en-US/firefox/addon/better-battlelog-fix-bbl
 <br>Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/firefox
 
 Plugins:<br>
-Advanced Player Stats: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins@master/AdvancedPlayerStats.js
+Advanced Player Stats: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js
 <br>Info: Display anti-cheat links on the main stats and also total weapon kills(just bullets, no nades), accuracy of total weapon kills and headshot stats.
 
-Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins@master/Anti-Cheat-Links.js
+Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-Links.js
 <br>Info: Display BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included). 
 
 Plugin Install:
@@ -22,7 +22,7 @@ After installing the browser plugin(BBlog) and restarting the browser, go to Bat
 Click on the Plugins tab within the starting menu of BBlog (not the Plugin Gallery tab!)<br>
 <br><img src="https://bfautism.ga/images/bbl/uChMhi4.png" alt="uChMhi4.png" class="embedImage-img importedEmbed-img"></img><br>
 <br>
-Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins@master/AdvancedPlayerStats.js and paste it within the black input field:<br>
+Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js and paste it within the black input field:<br>
 <br><img src="https://bfautism.ga/images/bbl/5xt3IDd.png" alt="5xt3IDd.png" class="embedImage-img importedEmbed-img"></img><br><br>
 <br>
 Press enter and refresh your browser. You are all done now!<br>
