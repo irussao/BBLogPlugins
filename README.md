@@ -22,7 +22,7 @@ After installing the browser plugin(BBlog) and restarting the browser, go to Bat
 Click on the Plugins tab within the starting menu of BBlog (not the Plugin Gallery tab!)<br>
 <br><img src="https://bfautism.ga/images/bbl/uChMhi4.png" alt="uChMhi4.png" class="embedImage-img importedEmbed-img"></img><br>
 <br>
-Copy each plugin URL, ie: <a href="https://codepen.io/russao/pen/rNaZgRZ.js" target="_blank">https://codepen.io/russao/pen/rNaZgRZ.js</a> and paste it within the black input field:<br>
+Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins@master/AdvancedPlayerStats.js and paste it within the black input field:<br>
 <br><img src="https://bfautism.ga/images/bbl/5xt3IDd.png" alt="5xt3IDd.png" class="embedImage-img importedEmbed-img"></img><br><br>
 <br>
 Press enter and refresh your browser. You are all done now!<br>
