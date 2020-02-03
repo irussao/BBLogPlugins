@@ -138,7 +138,8 @@ BBLog.handle("add.plugin", {
 			else {
 				$( "#advanced-player-links" ).remove();
 			}	
-if (instance.storage("use.player-stats")) {			
+if (instance.storage("use.player-stats")) {
+if (!$( "#advanced-player-stats" ).length) { 	
 if (instance.loadonce == 0) {
 instance.loadonce = 1;
 instance.waitforit = 0;
@@ -203,7 +204,7 @@ if (acct > 39) acccolor = "#e2361f";
 $("#overview-info div[class=box]").first().append("<div id='bfdb_"+soldierName+"' name='"+soldierName+"'></div>");
 instance.loadonce = 1;
 instance.waitforit = 0;
-var myhtml = '<li data-tooltip="Total Weapons kills, NO NADES" style="height:56px;"><span style="font-size: 12px;">Weapon Kills</span><strong id="stat-test1">'+totwpkills+'</strong></li><li style="height:56px;" data-tooltip="Headshots - Weapons only"><span style="font-size: 12px;">Headshots</span><strong id="stat-test2" style="color:'+hscolor+'">'+hswpkills+'('+hsRate+'%) </strong></li><li class="last" style="height:56px;" data-tooltip="Accuracy - Weapons only, NO NADES"><span style="font-size: 12px;">Accuracy</span> <strong id="stat-test3" style="color:'+acccolor+'">'+acct+'%</strong> </li>';
+var myhtml = '<div id="advanced-player-stats"><li data-tooltip="Total Weapons kills, NO NADES" style="height:56px;"><span style="font-size: 12px;">Weapon Kills</span><strong id="stat-test1">'+totwpkills+'</strong></li><li style="height:56px;" data-tooltip="Headshots - Weapons only"><span style="font-size: 12px;">Headshots</span><strong id="stat-test2" style="color:'+hscolor+'">'+hswpkills+'('+hsRate+'%) </strong></li><li class="last" style="height:56px;" data-tooltip="Accuracy - Weapons only, NO NADES"><span style="font-size: 12px;">Accuracy</span> <strong id="stat-test3" style="color:'+acccolor+'">'+acct+'%</strong> </li></div>';
 $("#overview-info-list").first().prepend(myhtml);
  
  if (vtca > vtcb && disphs > 0) {
@@ -228,7 +229,7 @@ instance.loadonce = 1;
 instance.waitforit = 0;
 		}
         }
-		
+}
 	}
 if (inwait == 0) {
 	instance.loadonce = 1; // testando
