@@ -2,7 +2,7 @@
 * BF4 Advanced Player stats - Add some advanced player links (Anti-Cheat) to the profile.
 *
 * @author I-MrFixIt-I + Elementofprgress (ACI)
-* @version 1.1.1
+* @version 1.1.12
 * @url https://getbblog.com/de/board/topic/145489/1/BF4-Advanced-player-links
 * original: https://bf4cheatreport.com/froadvancedplayerlinks.js
 * Edited by Russao
