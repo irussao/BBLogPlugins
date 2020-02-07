@@ -9,9 +9,11 @@ FireFox: https://addons.mozilla.org/en-US/firefox/addon/better-battlelog-fix-bbl
 
 Plugins:<br>
 Advanced Player Stats: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js
+<br>if the above link dont work: https://codepen.io/russao/pen/OJPoeJW.js
 <br>Info: Display anti-cheat links on the main stats and also total weapon kills(just bullets, no nades), accuracy of total weapon kills and headshot stats.
 
 Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-Links.js
+<br>if the above link dont work: https://codepen.io/russao/pen/QWwVXgr.js
 <br>Info: Display BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included). 
 
 Plugin Install:
