@@ -71,6 +71,7 @@ BBLog.handle("add.plugin", {
         {"key" : "use.highlight-battlereport", "init" : 1},
         {"key" : "change-color", "init" : 0, "handler" : function(instance){
             var color = prompt(instance.t("choose-color"));
+	    if (!color) return;	
             if (color.charAt(0) != "#")
             {
                 color =+ "#";
