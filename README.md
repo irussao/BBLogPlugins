@@ -1,5 +1,6 @@
 Better Battlelog Current version: 5.3.2
-#BBLog Changes
+
+# BBLog Changes
 
 - 5.3.2 I just fixed BF3 and BFH, BBlog was not loading for these games.
 
