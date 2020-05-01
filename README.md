@@ -5,6 +5,9 @@ Better Battlelog Current version: 5.3.2
 - 5.3.2 I just fixed BF3 and BFH, BBlog was not loading for these games.
 
 --------------------------------- 5.3.1 ---------------------------------
+
+Video: https://www.youtube.com/watch?v=8R0Wc8U6mD8
+
 - Fixed some issues and added EWI(extended weapon information) to loadout and weapon stats
 
 EWI - Extended Weapon Information:
@@ -17,7 +20,27 @@ The weapon stats data are from the old symthic site, time to kill is updated due
 
 There are 2 screenshots function: "SS"(will take a SS and ask you to save) and "Upload SS"(it will upload the SS to imgur and give you the link)
 
-Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here:https://i.imgur.com/hRh1vz5.png
+Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here: https://i.imgur.com/hRh1vz5.png
+
+
+#The chart(weapon damage)
+Image: https://i.imgur.com/IQvVhP7.png
+
+Player(white, green, orange and red): total damage, flat line
+
+Base(yellow): Max and Min damage
+
+ HC - hardcore(strong blue): Max and Min damage
+
+ Max base(pink): if the are any headshots, then it will display the max base damage + max headshot damage
+
+ Max Avg.(Cyan): It's the average of Base, HC, Max Base, Max player damage + other calc. so this flat line should be most of the time above the player's flat line.
+
+Take into account that if the player has only normal games, then most of the time the player's line will never be the same as Base line, because there are damage over distance, so at the end of the round, the player will never do MAX Damage, every hit that is not a kill will lower the damage, every hit that is over the max damage and it's a kill, will lower the damage and the same thing for Max damage, every hit on some random low health player that is a kill, it will increase the damage above max damage, so at the end, if the player is under 50% headshot ratio, then the player most likely will be below the base damage line, pistols that are used to finish a kill will also have high damage, same thing goes for hardcore players, many of them will be under base damage, some above base damage and some times even above hardcore damage line.
+
+Cheat Score: It's just a ranking system, if the cheat score is above 0%, it does not mean that the player is cheating, could be many things, such as stats padding, trying hard a certain stats, like going for headshots, etc... not just cheating, so please don't report anyone just because you saw a cheat score above 0%.
+
+If you think that the player is suspicious, check others weapons, also there a link to BF4CR(bf4cheatreport.com), you can set the number of BR(battle report) and check every BR.
 
 # BBLogPlugins
 Plugins for Better Battlelog Extension:
