@@ -23,7 +23,7 @@ There are 2 screenshots function: "SS"(will take a SS and ask you to save) and "
 Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here: https://i.imgur.com/hRh1vz5.png
 
 
-#The chart(weapon damage)
+# The chart(weapon damage)
 Image: https://i.imgur.com/IQvVhP7.png
 
 Player(white, green, orange and red): total damage, flat line
