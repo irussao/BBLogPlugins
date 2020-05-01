@@ -1,3 +1,5 @@
+Better Battlelog Current version: 5.3.2
+
 # BBLogPlugins
 Plugins for Better Battlelog Extension:
 
