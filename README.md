@@ -1,4 +1,22 @@
 Better Battlelog Current version: 5.3.2
+#BBLog Changes
+
+- 5.3.2 I just fixed BF3 and BFH, BBlog was not loading for these games.
+
+--------------------------------- 5.3.1 ---------------------------------
+- Fixed some issues and added EWI(extended weapon information) to loadout and weapon stats
+
+EWI - Extended Weapon Information:
+
+Weapon Stats: It display advanced stats from the current selected weapon and the current player's total stats of the selected weapon .
+
+Loadout: It display advanced stats for the current selected weapon.
+
+The weapon stats data are from the old symthic site, time to kill is updated due to bullet-out frame, but you can see both stats, the new and the old, for everything there is a tooltip, all you need to do is to put the mouse over something, then it will display more info.
+
+There are 2 screenshots function: "SS"(will take a SS and ask you to save) and "Upload SS"(it will upload the SS to imgur and give you the link)
+
+Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here:https://i.imgur.com/hRh1vz5.png
 
 # BBLogPlugins
 Plugins for Better Battlelog Extension:
