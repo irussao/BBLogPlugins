@@ -1,5 +1,11 @@
 Better Battlelog Current version: 5.3.2
 
+Chrome: https://chrome.google.com/webstore/detail/better-battlelog-fixbblog/ncopbeadajoekpedjllcakdmbmgnfgph
+Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/chrome
+
+FireFox: https://addons.mozilla.org/en-US/firefox/addon/better-battlelog-fix-bblog/
+Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/firefox
+
 # BBLog Changes
 
 - 5.3.2 I just fixed BF3 and BFH, BBlog was not loading for these games.(thx LibraEmbers).
