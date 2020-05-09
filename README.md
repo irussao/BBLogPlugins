@@ -1,10 +1,10 @@
 Better Battlelog Current version: 5.3.2
 
 Chrome: https://chrome.google.com/webstore/detail/better-battlelog-fixbblog/ncopbeadajoekpedjllcakdmbmgnfgph
-Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/chrome
-
+<br>Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/chrome
+<br>
 FireFox: https://addons.mozilla.org/en-US/firefox/addon/better-battlelog-fix-bblog/
-Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/firefox
+<br>Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/firefox
 
 # BBLog Changes
 
