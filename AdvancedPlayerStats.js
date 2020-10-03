@@ -120,7 +120,7 @@ BBLog.handle("add.plugin", {
                     if (instance.storage("use.247FairPlay")) html += "<div class='description'><a href='https://www.247fairplay.com/CheatDetector/" + soldierName + "' target='_blank'>247FairPlay</a></div>"
                                                                     + "<div class='description'>&#9760;</div>";                                                                
                                                                     
-                    if (instance.storage("use.BF4CR")) html += "<div class='description'><a href='https://bf4cheatreport.com?bblog=1&cnt=100&uid=" + soldierName + "' target='_blank'>BF4CR</a></div>"
+                    if (instance.storage("use.BF4CR")) html += "<div class='description'><a href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=" + personaId + "' target='_blank'>BF4CR</a></div>"
                                                                     + "<div class='description'>&#9760;</div>";
                     
                     if (instance.storage("use.Google")) html += "<div class='description'><a href='https://www.google.com/#q=%22" + soldierName + "%22' target='_blank'>Google</a></div>"
