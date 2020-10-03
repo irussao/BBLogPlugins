@@ -3,7 +3,7 @@
 * Friends Highlighter - Highlights your friends in the scoreboard and battlereports
 *
 * @author I-MrFixIt-I
-* @version 1.0
+* @version 1.1
 * @url https://getbblog.com/
 * Edited by Russao
 */
@@ -137,13 +137,14 @@ BBLog.handle("add.plugin", {
 
 			}
 			if (instance.storage("use.BFLinks")) {
-				var didit = $("#bfdb_"+soldierName).attr('name'); 
+				var newsname = soldierName.replace(" ", "_");
+				var didit = $("#bfdb_"+newsname).attr('name'); 
 				var datapid = $(this).attr("data-personaid");
 				
 				$(document).ready(function() {
 					if (soldierName != didit) {						
 							var bfdbcode = "";
-							html = `<div id='bfdb_`+soldierName+`' name='`+soldierName+`' value='yes' style='font-size: 11px;color: red;z-index:1000;margin-left: -70px'>` + bfdbcode + ` <a style="font-size: 11px;color:red;" href='https://bf4db.com/player/` + datapid + `' target='_blank'>BF4DB</a> | <a style="font-size: 11px;color:#445C9C;" href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=` + datapid + `' target='_blank'>BF4CR</div>`; 
+							html = `<div id='bfdb_`+newsname+`' name='`+soldierName+`' value='yes' style='font-size: 11px;color: red;z-index:1000;margin-left: -70px'>` + bfdbcode + ` <a style="font-size: 11px;color:red;" href='https://bf4db.com/player/` + datapid + `' target='_blank'>BF4DB</a> | <a style="font-size: 11px;color:#445C9C;" href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=` + datapid + `' target='_blank'>BF4CR</div>`; 
 							$("tr[data-personaid=\"" + datapid + "\"] div[class=user-info]").append(html); 
 
 					}
