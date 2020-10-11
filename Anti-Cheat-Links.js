@@ -3,7 +3,7 @@
 * Friends Highlighter - Highlights your friends in the scoreboard and battlereports
 *
 * @author I-MrFixIt-I
-* @version 1.1
+* @version 1.2
 * @url https://getbblog.com/
 * Edited by Russao
 */
@@ -104,6 +104,12 @@ BBLog.handle("add.plugin", {
         $.each($(rows), function() {
             var soldierNameContainer = $(this).find(".soldier-name .user-info .common-playername-personaname-nolink");
             var soldierName = $(soldierNameContainer).text();
+            if (soldierName.length < 2) {
+                soldierNameContainer = $(this).find(".soldier-name .user-info .common-playername-personaname");
+                soldierName = $(soldierNameContainer).text();
+                soldierName = soldierName.replace(/\n/g, "");
+                soldierName = soldierName.replace(/ /g, "");                
+            }
     	    var tag = $(soldierNameContainer).find(".bblog-tag").text(); // get clan tag from player	
 			var html = "";
     	    
