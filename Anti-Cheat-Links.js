@@ -3,7 +3,7 @@
 * Friends Highlighter - Highlights your friends in the scoreboard and battlereports
 *
 * @author I-MrFixIt-I
-* @version 1.2
+* @version 1.3
 * @url https://getbblog.com/
 * Edited by Russao
 */
