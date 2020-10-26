@@ -3,7 +3,7 @@
 * Friends Highlighter - Highlights your friends in the scoreboard and battlereports
 *
 * @author I-MrFixIt-I
-* @version 1.3
+* @version 1.3.1
 * @url https://getbblog.com/
 * Edited by Russao
 */
@@ -36,7 +36,7 @@ BBLog.handle("add.plugin", {
     */
     translations : {
         "en" : {
-			"use.BFLinks" : "Show Anti-Cheat links",
+	    "use.BFLinks" : "Show Anti-Cheat links",
             "use.friends-highlighter" : "Use Friends Highlighter",
             "use.highlight-scoreboard" : "Highlight friends in scoreboard",
             "use.highlight-battlereport" : "Highlight friends in battlereport",
@@ -44,7 +44,7 @@ BBLog.handle("add.plugin", {
             "choose-color" : "Choose a color of your choice. Example: #00c8ff"
         },
         "de" : {
-			"use.BFLinks" : "Show Anti-Cheat links",
+	    "use.BFLinks" : "Show Anti-Cheat links",
             "use.friends-highlighter" : "Friends Highlighter verwenden",
             "use.highlight-scoreboard" : "Freunde im Scoreboard hervorheben",
             "use.highlight-battlereport" : "Freunde im Kampfbericht hervorheben",
@@ -174,11 +174,13 @@ BBLog.handle("add.plugin", {
         if (instance.storage("use.friends-highlighter"))
         {
             if(instance.storage("use.highlight-scoreboard") && window.location.href.match(/\/servers\/show\/pc\//i)){
-                instance.highlightFriends(instance, $("#server-players-list .row table tbody tr"));
-        	}
-        	else if(instance.storage("use.highlight-battlereport") && window.location.href.match(/\/battlereport\/show\/1\//i)){
+		if (instance.storage("use.Advanced-Scoreboard") != 1) {
+			instance.highlightFriends(instance, $("#server-players-list .row table tbody tr"), "#server-players-list");
+		}
+            }
+            else if(instance.storage("use.highlight-battlereport") && window.location.href.match(/\/battlereport\/show\/1\//i)){
                 instance.highlightFriends(instance, $("#battlereport-scoreboard .row table tbody tr"));
-        	}
+            }
         }
     }
 });
