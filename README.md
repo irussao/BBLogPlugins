@@ -12,16 +12,14 @@ BBL: Video: https://www.youtube.com/watch?v=8R0Wc8U6mD8
 Plugins for Better Battlelog Extension:
 
 Advanced Scoreboard: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js
-<br>Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
+<br>Info: Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
  
 Advanced Scoreboard video: hhttps://www.youtube.com/watch?v=l7Z-PbmA3wM
 
 Advanced Player Stats: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js
-<br>if the above link dont work: https://codepen.io/russao/pen/OJPoeJW.js
 <br>Info: Display anti-cheat links on the main stats and also total weapon kills(just bullets, no nades), accuracy of total weapon kills and headshot stats.
 
 Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-Links.js
-<br>if the above link dont work: https://codepen.io/russao/pen/QWwVXgr.js
 <br>Info: Display BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included). 
 
 Plugin Install:
