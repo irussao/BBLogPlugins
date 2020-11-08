@@ -12,7 +12,7 @@ BBL: Video: https://www.youtube.com/watch?v=8R0Wc8U6mD8
 Plugins for Better Battlelog Extension:
 
 Advanced Scoreboard: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AScoreboard.js
- Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
+<br>Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
  
 Advanced Scoreboard video: hhttps://www.youtube.com/watch?v=l7Z-PbmA3wM
 
