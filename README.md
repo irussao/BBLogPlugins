@@ -11,7 +11,7 @@ BBL: Video: https://www.youtube.com/watch?v=8R0Wc8U6mD8
 # BBLogPlugins
 Plugins for Better Battlelog Extension:
 
-Advanced Scoreboard: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AScoreboard.js
+Advanced Scoreboard: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js
 <br>Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
  
 Advanced Scoreboard video: hhttps://www.youtube.com/watch?v=l7Z-PbmA3wM
@@ -32,7 +32,7 @@ After installing the browser plugin(BBlog) and restarting the browser, go to Bat
 Click on the Plugins tab within the starting menu of BBlog (not the Plugin Gallery tab!)<br>
 <br><img src="https://bfautism.ga/images/bbl/uChMhi4.png" alt="uChMhi4.png" class="embedImage-img importedEmbed-img"></img><br>
 <br>
-Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AScoreboard.js and paste it within the black input field:<br>
+Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js and paste it within the black input field:<br>
 <br><img src="https://bfautism.ga/images/bbl/5xt3IDd.png" alt="5xt3IDd.png" class="embedImage-img importedEmbed-img"></img><br><br>
 <br>
 Press enter and refresh your browser. You are all done now!<br>
