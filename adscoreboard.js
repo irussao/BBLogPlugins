@@ -2,7 +2,7 @@
  * Advanced Scoreboard
  * 
  * @author Cr1N
- * @version 1.2 (edited by Russao)
+ * @version 1.3 (edited by Russao)
  */
 
 BBLog.handle("add.plugin", {
@@ -649,38 +649,19 @@ BBLog.handle("add.plugin", {
         });
 
         //Join on a specific team
-
-        $("#as-container").on('click', '.join-team', function () {
-            var teamId = $(this).attr('team-id');
-            //alert("I want to join " + teamId);
-
+		$("#as-container").on('click', '.as-join-team', function() {			
+            var teamId = $(this).attr('team-id');			
             var teams = instance.data.latestScoreboardData.teams;
-            var team = {};
+
             for (var i = 0; i < teams.length; i++) {
-                if(teams[i].status.teamId == teamId) {
-                    team = teams[i];
-                    break;
+                var team = teams[i];
+                if (team.status.teamId == teamId) {
+                    instance.joinTeam(team);
+                    return;
                 }
             }
-
-            //Iterate team and find lowest ranked played
-
-            var lowestRank = 140;
-            var lowestPlayer = {};
-
-            for (var i = 0; i < team.players.length; i++) {
-                var player = team.players[i];
-                if (player.rank < lowestRank) {
-                    lowestRank = player.rank;
-                    lowestPlayer = player;
-                }
-            }
-
-            instance.joinPlayer(lowestPlayer.personaId);
         });
-
-
-
+				
         $("#as-render-scorboard-button").click(function(){
 
             instance.updateAll(instance);
@@ -702,6 +683,54 @@ BBLog.handle("add.plugin", {
         var game = elem.getAttribute("data-game");
 
         window.gamemanager.joinServerByGuid(guid, platform, game, personaId, 1);
+
+    },
+	joinTeam : function(team) {
+        // Create squads
+
+        var squads = {};
+
+        for (var i = 0; i < team.players.length; i++) {
+            var player = team.players[i];
+
+            if (!player.hasOwnProperty('squad')) { // Player is not in a squad
+                continue;
+            }
+            if (!squads.hasOwnProperty(player.squad)) {
+                squads[player.squad] = [];
+            }
+            squads[player.squad].push(player);
+
+        }
+        
+        var elegiblePlayers = [];
+
+        for (var squadId in squads) {
+            var squad = squads[squadId];
+            var playerCount = squad.length;
+            if (playerCount < 5) {
+                for (var i = 0; i < playerCount; i++) {
+                    elegiblePlayers.push(squad[i]);
+                }
+            }
+        }
+
+        // Sort by rank ascending
+        elegiblePlayers.sort(function(a, b) {
+            if (a.rank < b.rank)
+                return -1;
+            if (a.rank > b.rank)
+                return 1;
+            return 0;
+        });
+
+        var joinOn = elegiblePlayers[0].personaId;
+
+        var elem = document.getElementById("server-page-join-buttons");
+        var guid = elem.getAttribute("data-guid");
+        var platform = elem.getAttribute("data-platform");
+        var game = elem.getAttribute("data-game");
+        window.gamemanager.joinServerByGuid(guid, platform, game, joinOn, 1);
 
     },
 
@@ -1059,7 +1088,7 @@ BBLog.handle("add.plugin", {
 				'<div style="display:table-cell;">' +  avgKD +'</div>' +
 				'<div style="display:table-cell;">' + avgpSkill +'</div>' +
 				'<div style="display:table-cell;">' + avgpstrength +'</div>' +
-				'<div style="display:table-cell;"><div style="display:table-cell; position: relative; top: -10px;"><button class="btn btn-tiny btn-primary arrow" team-id="' + team.status.teamId + '" data-tooltip="Join ' + teamName + '"></button></div></div>' +
+				'<div style="display:table-cell;"><div style="display:table-cell; position: relative; top: -10px;"><button class="as-join-team btn btn-tiny btn-primary arrow" team-id="' + team.status.teamId + '" data-tooltip="Join ' + teamName + '"></button></div></div>' +
 				'</<div></<div>'+
 				'</td>';
 		return dhtml;
