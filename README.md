@@ -25,13 +25,13 @@ Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-Li
 Plugin Install:
 <br><br>
 After installing the browser plugin(BBlog) and restarting the browser, go to Battlelog and hoover your mouse over the new slider that appears on the left side of your screen.<br>
-<br><img src="https://bfautism.ga/images/bbl/hDgeSwU.png" alt="hDgeSwU.png" class="embedImage-img importedEmbed-img"></img><br>
+<br><img src="https://gameace.ga/images/bbl/hDgeSwU.png" alt="hDgeSwU.png" class="embedImage-img importedEmbed-img"></img><br>
 <br>
 Click on the Plugins tab within the starting menu of BBlog (not the Plugin Gallery tab!)<br>
-<br><img src="https://bfautism.ga/images/bbl/uChMhi4.png" alt="uChMhi4.png" class="embedImage-img importedEmbed-img"></img><br>
+<br><img src="https://gameace.ga/images/bbl/uChMhi4.png" alt="uChMhi4.png" class="embedImage-img importedEmbed-img"></img><br>
 <br>
 Copy each plugin URL, ie: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js and paste it within the black input field:<br>
-<br><img src="https://bfautism.ga/images/bbl/5xt3IDd.png" alt="5xt3IDd.png" class="embedImage-img importedEmbed-img"></img><br><br>
+<br><img src="https://gameace.ga/images/bbl/5xt3IDd.png" alt="5xt3IDd.png" class="embedImage-img importedEmbed-img"></img><br><br>
 <br>
 Press enter and refresh your browser. You are all done now!<br>
 <br>
