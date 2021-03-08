@@ -58,11 +58,11 @@ The weapon stats data are from the old symthic site, time to kill is updated due
 
 There are 2 screenshots function: "SS"(will take a SS and ask you to save) and "Upload SS"(it will upload the SS to imgur and give you the link)
 
-Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here: <a href="https://i.imgur.com/hRh1vz5.png" target="_blank">https://i.imgur.com/hRh1vz5.png</a>
+Also, if you click on any weapon, be it on loadout or weapon stats, you get the correct rpm info, even for weapons that did not have rpm, like pistols, shotguns, etc.. as you can see here: <a href="https://imgur.com/hRh1vz5.png" target="_blank">https://imgur.com/hRh1vz5.png</a>
 
 
 # The chart(weapon damage)
-Image: <a href="https://i.imgur.com/IQvVhP7.png" target="_blank">https://i.imgur.com/IQvVhP7.png</a>
+Image: <a href="https://imgur.com/IQvVhP7.png" target="_blank">https://imgur.com/IQvVhP7.png</a>
 
 Player(white, green, orange and red): total damage, flat line
 
