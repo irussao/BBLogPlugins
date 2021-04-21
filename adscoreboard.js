@@ -2,15 +2,15 @@
  * Advanced Scoreboard
  * 
  * @author Cr1N
- * @version 1.3 (edited by Russao)
+ * @version 1.3.2 (edited by Russao)
  */
 
 BBLog.handle("add.plugin", {
     /* Plugin Infos */
     id : "bf4-advanced-scoreboard-plugin-dev-1-0",
     name : "Advanced Scoreboard",
-    version : '1.3',
-    build: '20201109',
+    version : '1.3.2',
+    build: '20212104',
 
 	serveinfchkload: {
 		spectator : 0,
@@ -918,6 +918,11 @@ BBLog.handle("add.plugin", {
                         playerObj.statsLoaded = true;
 
                         var pStats = instance.playerStats[player.personaId];
+						
+						// seeders? fix												
+						if (pStats.overviewStats == "undefined" || pStats.overviewStats == null) { 
+						    return;
+						}
 
                         var displayStat = instance.storage('displayStat');
                         if (displayStat == 'kdRatio' && !instance.storage('useResetKdr')) {
@@ -930,7 +935,9 @@ BBLog.handle("add.plugin", {
 							var strength = (((pStats.overviewStats.killsPerMinute * pStats.overviewStats.kdRatio) * 10) + ((pStats.overviewStats.skill * pStats.overviewStats.scorePerMinute) / 10000)) * 10;                            
                             playerObj.pDisplayStat = Math.floor(strength);
                         } else {
-                            playerObj.pDisplayStat = pStats.overviewStats[displayStat];
+							if (displayStat != "undefined" || displayStat != null) { 
+								playerObj.pDisplayStat = pStats.overviewStats[displayStat];
+							} else { console.log(player.name + " pDisplayStat: " + pDisplayStat); }	
                         }
                         teamObj.totalPDisplayStat += playerObj.pDisplayStat;
                         teamObj.playersLoaded++;
@@ -973,6 +980,11 @@ BBLog.handle("add.plugin", {
                     var pStats = instance.playerStats[player.personaId];
                     
                     //Iterate over the top play vehicles and add them to the role totals for the team
+					// seeders? fix												
+					if (pStats.topVehicles == "undefined" || pStats.topVehicles == null) { 						
+					    return;
+					}
+
                     for (var i = 0; i < pStats.topVehicles.length; i++) {
                         var vehicle = pStats.topVehicles[i];
                         var vehicleName = vehicle.category.replace('Vehicle ', '');
@@ -1110,7 +1122,7 @@ BBLog.handle("add.plugin", {
 
 		var displyscorem = "";
 		if (showtickers != 0) displyscorem = ' ('+showtickers+')';
-        var displayMap = '<div style="float:left; padding: 10px"><img class="current-map" src="//eaassets-a.akamaihd.net/bl-cdn/cdnprefix/9c0b010cd947f38bf5e87df5e82af64e0ffdc12fh/public/base/bf4/map_images/195x79/' + s.mapName.toLowerCase() + '.jpg"></img></div>' +
+        var displayMap = '<div style="float:left; padding: 10px"><img class="current-map" src="//cdn.battlelog.com/bl-cdn/cdnprefix/9c0b010cd947f38bf5e87df5e82af64e0ffdc12fh/public/base/bf4/map_images/195x79/' + s.mapName.toLowerCase() + '.jpg"></img></div>' +
             '<div id="as-map-name" style="margin-left: 6px;position: relative;top: 8px;">' + instance.data.gameServerWarsaw.mapLookup[s.mapName].label + '</div>' +
             '<div style="margin-left: 6px;position: relative;top: 13px;" id="as-map-mode">' + instance.lookup.gameMode(s.gameMode) + ' '+displyscorem+'</div>';
 
@@ -1954,8 +1966,8 @@ BBLog.handle("add.plugin", {
 			}	
 			if (bbcheat) lnhfcheat = "line-height: 29px;";
 			
-			var dogtagBasic = 'eaassets-a.akamaihd.net/bl-cdn/cdnprefix/production-5766-20200917/public/profile/warsaw/gamedata/dogtags/large/' + pStats.dogTagBasic.imageConfig.slug + ".png";
-            var dogtagAdvanced = 'eaassets-a.akamaihd.net/bl-cdn/cdnprefix/production-5766-20200917/public/profile/warsaw/gamedata/dogtags/large/' + pStats.dogTagAdvanced.imageConfig.slug + ".png";
+			var dogtagBasic = 'cdn.battlelog.com/bl-cdn/cdnprefix/production-5766-20200917/public/profile/warsaw/gamedata/dogtags/large/' + pStats.dogTagBasic.imageConfig.slug + ".png";
+            var dogtagAdvanced = 'cdn.battlelog.com/bl-cdn/cdnprefix/production-5766-20200917/public/profile/warsaw/gamedata/dogtags/large/' + pStats.dogTagAdvanced.imageConfig.slug + ".png";
 			var htmltags = '<div class="dogtags dogtags-chain horizontal"style="position: relative;top: '+setembl[1]+';">'+
 			'<img class="basic rotated large" src="//'+dogtagBasic+'">'+
 			'<img class="advanced large" src="//'+dogtagAdvanced+'">'+			
@@ -2641,7 +2653,7 @@ BBLog.handle("add.plugin", {
 
         teamFlag : function(teamName) 
         {
-            var urlPrefix = "https://eaassets-a.akamaihd.net/bl-cdn/cdnprefix/2e8fa20e7dba3f4aecb727fc8dcb902f1efef569b/public/common/flags/";
+            var urlPrefix = "https://cdn.battlelog.com/bl-cdn/cdnprefix/2e8fa20e7dba3f4aecb727fc8dcb902f1efef569b/public/common/flags/";
             if (teamName == "US" || teamName == "RU" || teamName == "CN") {
                 return urlPrefix + teamName.toLowerCase() + '.gif';
             } else {
