@@ -919,9 +919,19 @@ BBLog.handle("add.plugin", {
 
                         var pStats = instance.playerStats[player.personaId];
 						
-						// seeders? fix												
+						// no stats fix												
 						if (pStats.overviewStats == "undefined" || pStats.overviewStats == null) { 
-						    return;
+							// console.log("overviewStats error: " + player.name, pStats);
+							pStats.overviewStats = [];
+							pStats.overviewStats.kills = 0;
+							pStats.overviewStats.deaths = 0;
+							pStats.overviewStats.kdRatio = 0;
+							pStats.overviewStats.skill = 0;
+							pStats.overviewStats.scorePerMinute = 0;
+							pStats.overviewStats.killsPerMinute = 0;
+							pStats.overviewStats.nostats = 1;
+						    // return;
+						//	end no stats fix
 						}
 
                         var displayStat = instance.storage('displayStat');
@@ -980,7 +990,7 @@ BBLog.handle("add.plugin", {
                     var pStats = instance.playerStats[player.personaId];
                     
                     //Iterate over the top play vehicles and add them to the role totals for the team
-					// seeders? fix												
+					// no stats? fix												
 					if (pStats.topVehicles == "undefined" || pStats.topVehicles == null) { 						
 					    return;
 					}
@@ -1915,6 +1925,9 @@ BBLog.handle("add.plugin", {
             //Create stats overview here
 
             var pStats = instance.playerStats[personaId];
+
+					// no stats fix				
+					if (pStats.overviewStats.nostats == 1) { return; }
 					
 					if (instance.storage('hilightingEnabled') && pStats.pDisplayStat !== '...') {
 						var pDisplayStatb = pStats.overviewStats[instance.storage('displayStat')];
