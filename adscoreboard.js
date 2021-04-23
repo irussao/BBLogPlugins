@@ -2,7 +2,7 @@
  * Advanced Scoreboard
  * 
  * @author Cr1N
- * @version 1.3.2 (edited by Russao)
+ * @version 1.2 (edited by Russao)
  */
 
 BBLog.handle("add.plugin", {
