@@ -9,8 +9,8 @@ BBLog.handle("add.plugin", {
     /* Plugin Infos */
     id : "bf4-advanced-scoreboard-plugin-dev-1-0",
     name : "Advanced Scoreboard",
-    version : '1.3.2',
-    build: '20212104',
+    version : '1.2',
+    build: '20201108',
 
 	serveinfchkload: {
 		spectator : 0,
