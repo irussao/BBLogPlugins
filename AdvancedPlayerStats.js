@@ -2,10 +2,11 @@
 * BF4 Advanced Player stats - Add some advanced player links (Anti-Cheat) to the profile.
 *
 * @author I-MrFixIt-I + Elementofprgress (ACI)
-* @version 1.1.12
+* @version 1.2
 * @url https://getbblog.com/de/board/topic/145489/1/BF4-Advanced-player-links
 * original: https://bf4cheatreport.com/froadvancedplayerlinks.js
 * Edited by Russao
+
 */
 
 // initialize your plugin
@@ -40,6 +41,8 @@ BBLog.handle("add.plugin", {
             "use.247FairPlay" : "Show 247FairPlay",
             "use.BF4DB" : "Show BF4DB",
             "use.BF4CR" : "Show BF4CR",
+			"use.Youtube" : "Show Youtube",
+			"use.twitch" : "Show Twitch",
             "use.Google" : "Show Google"
         },
         "de" : {
@@ -49,6 +52,8 @@ BBLog.handle("add.plugin", {
             "use.247FairPlay" : "247FairPlay anzeigen",
             "use.BF4DB" : "BF4DB anzeigen",
             "use.BF4CR" : "BF4CR anzeigen",
+			"use.Youtube" : "Youtube anzeigen",
+			"use.twitch" : "Twitch anzeigen",
             "use.Google" : "Google anzeigen"
         }
     },
@@ -71,6 +76,8 @@ BBLog.handle("add.plugin", {
         {"key" : "use.247FairPlay", "init" : 1},
         {"key" : "use.BF4DB", "init" : 1},	
         {"key" : "use.BF4CR", "init" : 1},
+		{"key" : "use.Youtube", "init" : 1},
+		{"key" : "use.twitch", "init" : 1},
         {"key" : "use.Google", "init" : 1}
     ],
 
@@ -111,26 +118,23 @@ BBLog.handle("add.plugin", {
                 if (!$( "#advanced-player-links" ).length) {                  
                     var bfdbhtml = "";
 					var bfdbhtmld = "";
-                    var html = "<div id='advanced-player-links' class='box-content no-padding leaderboard-highlight'>";
-                    html += "<div class='description'>&#9760;</div>";
+                    var html = '<nav id="advanced-player-links" class="submenu" style="margin-top: -10px !important; margin-bottom: 1px !important;"><ul class="stats" style="margin-top: 4px !important; margin-bottom: 4px !important;">'; // "<div id='advanced-player-links' class='box-content no-padding leaderboard-highlight'>";
    
-                    if (instance.storage("use.ACI")) html += "<div class='description'><a href='//history.anticheatinc.com/bf4/index.php?searchvalue=" + soldierName + "' target='_blank'>ACI</a></div>"
-                                                                + "<div class='description'>&#9760;</div>";
-    
-                    if (instance.storage("use.247FairPlay")) html += "<div class='description'><a href='https://www.247fairplay.com/CheatDetector/" + soldierName + "' target='_blank'>247FairPlay</a></div>"
-                                                                    + "<div class='description'>&#9760;</div>";                                                                
-                                                                    
-                    if (instance.storage("use.BF4CR")) html += "<div class='description'><a href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=" + personaId + "' target='_blank'>BF4CR</a></div>"
-                                                                    + "<div class='description'>&#9760;</div>";
-                    
-                    if (instance.storage("use.Google")) html += "<div class='description'><a href='https://www.google.com/#q=%22" + soldierName + "%22' target='_blank'>Google</a></div>"
-                                                                    + "<div class='description'>&#9760;</div>";																							
-					
-					if (instance.storage("use.BF4DB")) html += "<div class='description'><a href='https://bf4db.com/player/" + personaId + "' target='_blank'>BF4DB</a>"+bfdbhtmld+" </div>" + bfdbhtml;
-   					
-					html += "<div class='description'>&#9760;</div><div class='clear'></div></div>";
+					if (instance.storage("use.Google")) html += "<li><a href='https://www.google.com/search?q=%22" + soldierName + "%22' target='_blank'>Google</a></li>";  
 
-					$("#overview-info div[class=box]").first().append(html);					
+					if (instance.storage("use.Youtube")) html += "<li><a href='https://www.youtube.com/results?search_query=" + soldierName + "' target='_blank'>Youtube</a></li>";
+					
+					if (instance.storage("use.twitch")) html += "<li><a href='https://www.twitch.tv/search?term=" + soldierName + "' target='_blank'>Twitch</a></li>";
+                          
+                    if (instance.storage("use.247FairPlay")) html += "<li><a href='https://www.247fairplay.com/CheatDetector/" + soldierName + "' target='_blank'>247FairPlay</a></li>";                                                                
+                                                                    
+                    if (instance.storage("use.BF4CR")) html += "<li><a href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=" + personaId + "' target='_blank'>BF4CR</a></li>";                                                     
+                                        
+					if (instance.storage("use.BF4DB")) html += "<li><a href='https://bf4db.com/player/" + personaId + "' target='_blank'>BF4DB</a></li>";
+   					
+					html += '</ul><div class="clear"></div></nav>'; 
+
+					$("#game-stats div[class=game-stats-content]").first().before(html);					
 					$('.leaderboard-highlight').css("height", "45px");
 					$('.description').css("font-size", "16px");					
                 }				
