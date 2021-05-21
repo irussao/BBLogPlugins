@@ -148,6 +148,7 @@ if (instance.loadonce == 0) {
 instance.loadonce = 1;
 instance.waitforit = 0;
 $.getJSON( "https://battlelog.battlefield.com/bf4/warsawWeaponsPopulateStats/"+personaId+"/1/stats/", function( data ) {
+if ($( "#advanced-player-stats" ).length) return;
 var peristhere = $("#bfdb_"+soldierName);
 var sname = $("#bfdb_"+soldierName).attr('name');
 var setheight = $("#overview-skill");
