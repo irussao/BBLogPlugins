@@ -1,4 +1,4 @@
-Better Battlelog Current version: 5.3.2
+<b>Better Battlelog Current version: 5.3.2</b>
 
 Chrome: https://chrome.google.com/webstore/detail/better-battlelog-fixbblog/ncopbeadajoekpedjllcakdmbmgnfgph
 <br>Source: https://github.com/Razer2015/better-battlelog/tree/master/extensions/chrome
@@ -8,19 +8,22 @@ FireFox: https://addons.mozilla.org/en-US/firefox/addon/better-battlelog-fix-bbl
 
 BBL: Video: https://www.youtube.com/watch?v=8R0Wc8U6mD8
 
-# BBLogPlugins
+# BBLog Plugins
 Plugins for Better Battlelog Extension:
 
-Advanced Scoreboard: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js <b>or go to Better Battlelog menu, click on plugin gallery and active "Advanced Scoreboard".</b>
+<b>Anti-Cheat Links & Advanced Stats</b>: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-LinksADVS.js
+<br>Video: https://youtu.be/JRW5EAtvMQU
+<br><img src="https://irussao.github.io/pluginimages/detailstats.png">
+
+<br>Info: Display a detailed scoreboard with BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included), if you have the old "Anti-Cheat Links" plugin, then replace it with this one. There are settings to remove anti-cheat links and display just the basic stats.
+
+<b>Advanced Scoreboard</b>: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js or go to Better Battlelog menu, click on plugin gallery and active "Advanced Scoreboard".
 <br>Info: Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, friends highlighter, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
  
 Advanced Scoreboard video: hhttps://www.youtube.com/watch?v=l7Z-PbmA3wM
 
-Advanced Player Stats: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js
+<b>Advanced Player Stats</b>: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/AdvancedPlayerStats.js
 <br>Info: Display anti-cheat links on the main stats and also total weapon kills(just bullets, no nades), accuracy of total weapon kills and headshot stats.
-
-Anti-Cheat Links: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/Anti-Cheat-Links.js
-<br>Info: Display BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included). 
 
 Plugin Install:
 <br><br>
@@ -62,7 +65,7 @@ Also, if you click on any weapon, be it on loadout or weapon stats, you get the 
 
 
 # The chart(weapon damage)
-Image: <a href="https://imgur.com/IQvVhP7.png" target="_blank">https://imgur.com/IQvVhP7.png</a>
+<img src="https://imgur.com/IQvVhP7.png"></img>
 
 Player(white, green, orange and red): total damage, flat line
 
