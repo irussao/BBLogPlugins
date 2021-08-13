@@ -197,6 +197,7 @@ BBLog.handle("add.plugin", {
 						if (showadvbr == "yes") linkpos = "font-size: 7px; color: red; z-index: 1; left: "+setleft+"; top: 14px; position: absolute;";
 						if (usealstyle == 1)  linkpos = "font-size: 7px; color: red; z-index: 1; left: 65px; top: 28px; position: absolute;";
 						if (usebasicstats == 1 || templa == "server") linkpos = "font-size: 7px; color: red; z-index: 1; left: 75px; top: 34px; position: absolute;";
+						if (instance.storage("use.BFLinks") && showadvbr == "no" && usealstyle == 1) linkpos = "font-size: 7px; color: red; z-index: 1; left: 75px; top: 34px; position: absolute;";
 						if (instance.storage("use.BFLinks")) bfdbcode = ` <a style="font-size: 11px;color:red;" href='https://bf4db.com/player/` + datapid + `' target='_blank'>BF4DB</a> | <a style="font-size: 11px;color:#445C9C;" href='https://bf4cheatreport.com?bblog=1&cnt=100&pid=` + datapid + `' target='_blank'>BF4CR</a>`;
 
 						html = `<div id='bfdb_`+newsname+`' name='`+soldierName+`' value='yes' style='`+linkpos+`'>` + bfdbcode + `</div>`;
