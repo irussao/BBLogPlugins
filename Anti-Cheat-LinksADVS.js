@@ -73,7 +73,7 @@ BBLog.handle("add.plugin", {
 	delaycount: 20,
 	
     highlightFriends : function(instance, rows, templa){
-	  var teamchk = Surface.Renderer.state.surface.battlereport.battleReport;
+	  var teamchk = Surface.Renderer.state.surface.battlereport.battleReport;	  
 	  var shownewdmg = false;
 	  if (BBLog.BBWF) shownewdmg = true;	
 	  var datajax = {};
@@ -495,7 +495,7 @@ $( document ).ajaxComplete(function( event, xhr, settings ) {
     domchange : function(instance){
 		instance.delaycount = 20;
         if(window.location.href.match(/\/servers\/show\/pc\//i)) {
-		if (instance.storage("use.Advanced-Scoreboard") != 1) {
+		if (BBLog._storage["bf4-advanced-scoreboard-plugin-dev-1-0.use.Advanced-Scoreboard"] != 1) {
 			instance.highlightFriends(instance, $("#server-players-list .row table tbody tr"), "server");
 		}
             }
