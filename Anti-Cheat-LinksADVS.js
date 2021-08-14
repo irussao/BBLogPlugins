@@ -438,7 +438,7 @@ $( document ).ajaxComplete(function( event, xhr, settings ) {
 								var tesmaxb = +(((hcdamage*aspchs)*wpndata.hsmultiple) + (hcdamage *(1-aspchs))).toFixed(2);
 								var tesmax = hcdamage;						
 								if (pdmg > maxposdmg) dmgstyle = " color: #ef9e2b;";
-								if (pdmg >= tesmax ) dmgstyle = " color: #ed8578;";
+								if (pdmg >= tesmax && pdmg > maxposdmg) dmgstyle = " color: #ed8578;";
 								if (pdmg >= tesmaxb) dmgstyle = " color: #e2361f;";							
 							}
 						}
