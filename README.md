@@ -15,7 +15,7 @@ Plugins for Better Battlelog Extension:
 <br>Video: https://youtu.be/JRW5EAtvMQU
 <br><img src="https://irussao.github.io/pluginimages/detailstats.png">
 
-<br>Info: Display a detailed scoreboard with BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included), if you have the old "Anti-Cheat Links" plugin, then replace it with this one. There are settings to remove anti-cheat links and display just the basic stats.
+<br>Info: Display a detailed scoreboard of the battlereport with BF4DB and BF4 Cheater report links for each player on the server(Not compatible with "Friends Highlighter", it's already included), if you have the old "Anti-Cheat Links" plugin, then replace it with this one. There are settings to remove anti-cheat links and display just the basic stats.
 
 <b>Advanced Scoreboard</b>: https://cdn.jsdelivr.net/gh/irussao/BBLogPlugins/adscoreboard.js or go to Better Battlelog menu, click on plugin gallery and active "Advanced Scoreboard".
 <br>Info: Created by Cr1N & edited by Russao, it can list squads, sort players by kills, kd, skill, strength, etc... Show total stats of all players, like kd, skill, kills, etc... You can join any player, team or squad, friends highlighter, colored squads, anti-cheat tools, any player is clickable and it show stats of the current selected player.
