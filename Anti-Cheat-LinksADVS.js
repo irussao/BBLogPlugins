@@ -490,6 +490,11 @@ $( document ).ajaxComplete(function( event, xhr, settings ) {
 		imgsvg.prepend(advhtml);
 		imgsvg.find("svg").appendTo("#movhere-"+plyid);
 	
+		var cspcol = $("#battlereport-player-score-"+teamrow+"-"+ plyid);								
+		if (cspcol) {
+			rpcsp = cspcol.find("td").first();
+			rpcsp.attr('colspan' , '9');
+		}	
 	},
 
     domchange : function(instance){
