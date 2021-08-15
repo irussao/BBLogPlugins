@@ -337,14 +337,26 @@ $( document ).ajaxComplete(function( event, xhr, settings ) {
 					if (chkta && chktb && twot == 1) {						
 						var valfta = +chkta.text();
 						var valftb = +chktb.text().replace(",", "");
-						if (sttots[1]) {														
+						if (sttots[1]) {
 							var tkda = sttots[2][1] == 0 ? sttots[2][0]: (sttots[2][0]/sttots[2][1]).toFixed(2) || 0;
 							var tkdb = sttots[1][1] == 0 ? sttots[1][0]: (sttots[1][0]/sttots[1][1]).toFixed(2) || 0;
-							var totalsta = '<td>'+tkda+'</td><td>'+sttots[2][2]+'</td><td>'+sttots[2][3]+'</td><td>'+sttots[2][4]+'</td>';
-							var totalstb = '<td>'+tkdb+'</td><td>'+sttots[1][2]+'</td><td>'+sttots[1][3]+'</td><td>'+sttots[1][4]+'</td>';
+							var aska = sttots[2][2];
+							var asha = sttots[2][3];
+							var asre = sttots[2][4];
+							var bska = sttots[1][2];
+							var bsha = sttots[1][3];
+							var bsre = sttots[1][4];
+							if (aska > 99) aska = `<span data-tooltip="`+aska+` Kill Assists">` + aska.toString()[0] + `..</span>`;
+							if (asha > 99) asha = `<span data-tooltip="`+asha+` Revives">` + asha.toString()[0] + `..</span>`;
+							if (asre > 99) asre = `<span data-tooltip="`+asre+` Heals">` + asre.toString()[0] + `..</span>`;
+							if (bska > 99) bska = `<span data-tooltip="`+bska+` Kill Assists">` + bska.toString()[0] + `..</span>`;
+							if (bsha > 99) bsha = `<span data-tooltip="`+bsha+` Revives">` + bsha.toString()[0] + `..</span>`;
+							if (bsre > 99) bsre =`<span data-tooltip="`+bsre+` Heals">` + bsre.toString()[0] + `..</span>`;
+							var totalsta = '<td>'+tkda+'</td><td>'+aska+'</td><td>'+asha+'</td><td>'+asre+'</td>';
+							var totalstb = '<td>'+tkdb+'</td><td>'+bska+'</td><td>'+bsha+'</td><td>'+bsre+'</td>';
 							if (valfta == sttots[1][0] && valftb == sttots[1][5]) {
-							 totalsta = '<td>'+tkdb+'</td><td>'+sttots[1][2]+'</td><td>'+sttots[1][3]+'</td><td>'+sttots[1][4]+'</td>';
-							 totalstb = '<td>'+tkda+'</td><td>'+sttots[2][2]+'</td><td>'+sttots[2][3]+'</td><td>'+sttots[2][4]+'</td>';
+							 totalsta = '<td>'+tkdb+'</td><td>'+bska+'</td><td>'+bsha+'</td><td>'+bsre+'</td>';
+							 totalstb = '<td>'+tkda+'</td><td>'+aska+'</td><td>'+asha+'</td><td>'+asre+'</td>';
 							}	
 						}
 						bluetf.find(".right").before(totalsta);
